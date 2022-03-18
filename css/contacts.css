@@ -35,3 +35,7 @@
         width: 60%;
     }
 }
+
+.banner__simple .contacts_map.banner__inner::after {
+    position: relative;
+}
