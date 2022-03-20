@@ -39,9 +39,81 @@
     display: flex;
     flex-direction: column;
     align-items: left;
+    position: relative;
+    height: fit-content;
 }
 
-.team-img {}
+.team-card-hover {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.team-card-hover-round {
+    top: calc(50% - 40px);
+    left: calc(50% - 60px);
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+    content: url('../images/icons/Ellipse plus102.svg');
+    transform: scale(2);
+    transition: all ease .5s;
+    color: black;
+}
+
+.active .team-card-hover-round {
+    content: url('../images/icons/Group 423.svg');
+    transform: scale(3.5);
+}
+
+.active .team-card-hover-plus {
+    transform: scale(3.5);
+    content: '';
+}
+
+.team-card-hover-plus {
+    margin: 80px;
+    flex-direction: row;
+    opacity: 0;
+    width: 28px;
+    height: 28px;
+    content: url('../images/icons/plushover.svg');
+    transform: scale(1);
+    transition: all ease .5s;
+}
+
+.team-card-hover:hover .team-card-hover-plus,
+.team-card-hover:hover .team-card-hover-round {
+    opacity: 100%;
+}
+
+.team-card-hover-round2 {
+    top: calc(50% - 40px);
+    left: calc(50% - 60px);
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+    content: url('../images/icons/Group 423.svg');
+    transform: scale(2);
+    transition: all ease .5s;
+    color: black;
+}
+
+.team-card-hover:hover .team-card-hover-round2 {
+    opacity: 100%;
+}
+
+.team-info {
+    width: 90%;
+    display: none;
+}
 
 .team-name {
     margin: 24px 0 8px 0;
@@ -56,6 +128,7 @@
     width: 100%;
     display: flex;
     justify-content: space-between;
+    margin-bottom: 16px;
 }
 
 .team-img img {
@@ -180,6 +253,15 @@
     .team-job::after {
         align-self: end;
         content: url('../images/icons/card-angle.svg');
+    }
+    .team-card-hover-round,
+    .team-card-hover-plus {
+        transition: all ease .5s;
+        transform: scale(1);
+        display: none;
+    }
+    .active.team-job::after {
+        transform: rotate(90deg);
     }
     .about-us.grid3col {
         margin-bottom: 72px;

@@ -39,3 +39,13 @@
 .banner__simple .contacts_map.banner__inner::after {
     position: relative;
 }
+
+iframe {
+    box-sizing: border-box;
+}
+
+@media screen and (min-width:500px) {
+    .contacts.banner__simple {
+        margin-bottom: 100px;
+    }
+}
