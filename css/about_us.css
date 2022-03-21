@@ -1,0 +1,366 @@
+.about-us.banner__simple .banner__inner img {
+    height: inherit;
+    position: relative;
+    bottom: 0;
+    height: 100%;
+}
+
+.about-us.banner__simple .banner__inner::after {
+    background-image: none;
+}
+
+.about-us.block_title {
+    width: 70%;
+    padding-top: 150px;
+}
+
+.block_title_l {
+    margin-bottom: 16px;
+}
+
+.about-us.banner__title {
+    max-width: 90%;
+    margin-top: 0;
+    padding-top: 150px;
+    padding-bottom: 48px;
+}
+
+.about-us.banner__title.banner__title_f {
+    padding-top: 100px;
+}
+
+.about-us.banner__wrapper-img {
+    width: 100vw;
+    overflow: hidden;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.banner__wrapper-img.about-us img {
+    overflow: hidden;
+}
+
+.about-columns {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.about-us-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-us-img2 {
+    display: none;
+}
+
+.about-us.history {
+    padding-left: 40px;
+}
+
+.about-us.t_wrapper9 {
+    margin-bottom: 16px;
+}
+
+.about-us.t_wrapper17 {
+    margin-bottom: 16px;
+    color: #485B63;
+    width: 90%;
+}
+
+.about-us.t_wrapper17:last-child {
+    margin-bottom: 24px;
+}
+
+.about-us.t_wrapper6 {
+    font-size: 32px;
+}
+
+.team-card {
+    padding-bottom: 24px;
+    border-bottom: 1px solid #BFBFBF;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    position: relative;
+    height: fit-content;
+}
+
+.team-card-hover {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.team-card-hover-round {
+    top: calc(50% - 40px);
+    left: calc(50% - 60px);
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+    content: url('../images/icons/Ellipse plus102.svg');
+    transform: scale(2);
+    transition: all ease .5s;
+    color: black;
+}
+
+.active .team-card-hover-round {
+    content: url('../images/icons/Group 423.svg');
+    transform: scale(3.5);
+}
+
+.active .team-card-hover-plus {
+    /* transform: scale(3.5); */
+    content: '';
+}
+
+.team-card-hover-plus {
+    flex-direction: row;
+    opacity: 0;
+    width: 28px;
+    height: 28px;
+    content: url('../images/icons/plushover.svg');
+    transform: scale(1);
+    transition: all ease .5s;
+}
+
+.team-card-hover-plus:first-child {
+    margin: 0 70px 0 0;
+}
+
+.team-card-hover-plus:last-child {
+    margin: 0 0 0 70px;
+}
+
+.team-card-hover:hover .team-card-hover-plus,
+.team-card-hover:hover .team-card-hover-round {
+    opacity: 100%;
+}
+
+.team-card-hover-round2 {
+    top: calc(50% - 40px);
+    left: calc(50% - 60px);
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    opacity: 0;
+    content: url('../images/icons/Group 423.svg');
+    transform: scale(2);
+    transition: all ease .5s;
+    color: black;
+}
+
+.team-card-hover:hover .team-card-hover-round2 {
+    opacity: 100%;
+}
+
+.team-info {
+    width: 90%;
+    display: none;
+}
+
+.team-name {
+    margin: 24px 0 8px 0;
+    text-align: left;
+    width: 100%;
+}
+
+.team-job {
+    cursor: pointer;
+    color: #54B7E3;
+    text-align: left;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.team-img img {
+    object-fit: cover;
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+}
+
+.team-img {
+    min-height: 200px;
+    width: 100%;
+    height: 27vw;
+    background-size: 100%;
+    border-radius: 15px;
+}
+
+.team-img-1 {
+    background-image: url('../images/Rectangle 1068.png');
+}
+
+.team-img-2 {
+    background-image: url('../images/Rectangle 1069.png');
+}
+
+.team-img-3 {
+    background-image: url('../images/Rectangle 1070.png');
+}
+
+.team-img-4 {
+    background-image: url('../images/Rectangle 1071.png');
+}
+
+.team-img-5 {
+    background-image: url('../images/Rectangle 1072.png');
+}
+
+.team-img-6 {
+    background-image: url('../images/Rectangle 1073.png');
+}
+
+.team-img-7 {
+    background-image: url('../images/Rectangle 1074.png');
+}
+
+.team-img-8 {
+    background-image: url('../images/Rectangle 1075.png');
+}
+
+.team-img-9 {
+    background-image: url('../images/Rectangle 1076.png');
+}
+
+.team-img-10 {
+    background-image: url('../images/Rectangle 1077.png');
+}
+
+.team-img-11 {
+    background-image: url('../images/Rectangle 1078.png');
+}
+
+.hide-btn {
+    position: relative;
+    background: #54B7E3;
+    color: #FCFDFF;
+    padding: 22px 45px;
+    text-align: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 72px;
+}
+
+@media screen and (max-width:600px) {
+    .about-us.block_title {
+        width: 100%;
+    }
+    .about-us.banner__title {
+        font-size: 18px;
+        width: 100%;
+        max-width: 100%;
+    }
+    /* .about-us.banner__wrapper-img {
+        margin: 0 0 0 -20px;
+    } */
+    .about-us.banner__title {
+        padding-bottom: 24px;
+        margin-bottom: 0;
+    }
+    .about-us.banner__title {
+        padding-top: 72px;
+    }
+    .about-us.banner__title.banner__title_f {
+        padding-top: 48px;
+    }
+    .about-us.block_title {
+        padding-top: 72px;
+    }
+    .about-us .after-opening_description,
+    .about-us .after-opening_price,
+    .about-us .after-opening_button {
+        display: none;
+    }
+    .about-us .t_wrapper9.after-opening_cardname {
+        font-size: 24px;
+    }
+    .team-img img {
+        object-fit: cover;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .team-img {
+        width: 100%;
+        height: 27vw;
+        background-size: 100%;
+        background-position: 50% 0%;
+        border-radius: 15px;
+    }
+    .team-name.about-us.t_wrapper6 {
+        font-size: 18px;
+    }
+    .team-job::after {
+        align-self: end;
+        content: url('../images/icons/card-angle.svg');
+    }
+    .team-card-hover-round,
+    .team-card-hover-plus {
+        transition: all ease .5s;
+        transform: scale(1);
+        display: none;
+    }
+    .active.team-job::after {
+        transform: rotate(90deg);
+    }
+    .about-us.grid3col {
+        margin-bottom: 72px;
+    }
+}
+
+@media screen and (min-width:376px) and (max-width:600px) {
+    .team-img {
+        height: 30vh;
+    }
+}
+
+@media screen and (min-width:599px) {
+    .hide-btn {
+        display: none;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .team-img img {
+        width: 400px;
+        height: 400px;
+    }
+    .team-img {
+        width: 400px;
+        height: 400px;
+    }
+}
+
+@media screen and (max-width:769px) {
+    .about-columns {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+    }
+    .about-us.t_wrapper17 {
+        width: 100%;
+    }
+    .about-us.history {
+        padding-left: 0px;
+    }
+    .about-us-img1 {
+        display: none;
+    }
+    .about-us-img2 {
+        display: flex;
+    }
+}
+
+.about-us.grid3col {
+    margin-bottom: 150px;
+}
