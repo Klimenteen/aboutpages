@@ -73,12 +73,11 @@
 }
 
 .active .team-card-hover-plus {
-    transform: scale(3.5);
+    /* transform: scale(3.5); */
     content: '';
 }
 
 .team-card-hover-plus {
-    margin: 80px;
     flex-direction: row;
     opacity: 0;
     width: 28px;
@@ -86,6 +85,14 @@
     content: url('../images/icons/plushover.svg');
     transform: scale(1);
     transition: all ease .5s;
+}
+
+.team-card-hover-plus:first-child {
+    margin: 0 70px 0 0;
+}
+
+.team-card-hover-plus:last-child {
+    margin: 0 0 0 70px;
 }
 
 .team-card-hover:hover .team-card-hover-plus,
