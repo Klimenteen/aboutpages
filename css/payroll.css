@@ -33,8 +33,6 @@
     width: 100%;
 }
 
-span.payroll_range_element {}
-
 .payroll_range_element label {
     font-weight: 500;
     font-size: 16px;
@@ -113,7 +111,7 @@ span.payroll_range_element {}
     width: 33%;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1023px) {
     .payroll_action .payroll_range-price {
         color: #54b7e3;
     }
@@ -121,17 +119,13 @@ span.payroll_range_element {}
         flex-direction: column;
     }
     #get_offer {
+        max-width: inherit;
         width: 100%;
     }
     .payroll_range {
         width: 100%;
     }
 }
-
-
-/* #employees,
-#payroll_range-price {
-} */
 
 .payroll_action p {
     font-weight: 500;
