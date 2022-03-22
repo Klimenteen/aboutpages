@@ -12,17 +12,13 @@ document.addEventListener('DOMContentLoaded', function() {
             if (e.target.value == 1) {
                 price_output.value = 35;
 
-            }
-            if (e.target.value >= 2 && e.target.value <= 4) {
+            } else if (e.target.value >= 2 && e.target.value <= 4) {
                 price_output.value = 120;
-            }
-            if (e.target.value >= 5 && e.target.value <= 10) {
+            } else if (e.target.value >= 5 && e.target.value <= 10) {
                 price_output.value = 250;
-            }
-            if (e.target.value >= 11 && e.target.value <= 50) {
+            } else if (e.target.value >= 11 && e.target.value <= 50) {
                 price_output.value = 250 + (23 * (e.target.value - 10));
-            }
-            if (e.target.value >= 51 && e.target.value <= 100) {
+            } else if (e.target.value >= 51 && e.target.value <= 100) {
                 price_output.value = 1170 + (20 * (e.target.value - 50));
             }
 
@@ -36,17 +32,13 @@ document.addEventListener('DOMContentLoaded', function() {
             if (e.target.value == 1) {
                 price_output.value = 35;
 
-            }
-            if (e.target.value >= 2 && e.target.value <= 4) {
+            } else if (e.target.value >= 2 && e.target.value <= 4) {
                 price_output.value = 120;
-            }
-            if (e.target.value >= 5 && e.target.value <= 10) {
+            } else if (e.target.value >= 5 && e.target.value <= 10) {
                 price_output.value = 250;
-            }
-            if (e.target.value >= 11 && e.target.value <= 50) {
+            } else if (e.target.value >= 11 && e.target.value <= 50) {
                 price_output.value = 250 + (23 * (e.target.value - 10));
-            }
-            if (e.target.value >= 51 && e.target.value <= 100) {
+            } else if (e.target.value >= 51 && e.target.value <= 100) {
                 price_output.value = 1170 + (20 * (e.target.value - 50));
             }
         }
