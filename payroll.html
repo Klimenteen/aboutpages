@@ -510,32 +510,24 @@
                         <p>Калькулятор стоимости</p>
                         <p>payroll аутсорсинга</p>
                     </div>
-                    <div class="">
+                    <div class="payroll_range_container">
                         <div class="payroll_range">
                             <div class="payroll_range_element">
                                 <label for="employees">Количество сотрудников</label>
                                 <input type="number" name="employees" id="employees" min="1" max="100" step="1" value="10" />
                                 <input type="range" name="employees_range" id="employees_range" class="styled_payroll" min="1" max="100" step="1" value="10" />
                             </div>
-                            <!-- <div class="payroll_range_element">
-                                <label for="incoming_invoices">Количество входящих инвойсов</label>
-                                <input type="number" name="incoming_invoices" id="incoming_invoices" min="1" max="100" step="1" value="10" />
-                                <input type="range" name="incoming_invoices_range" id="incoming_invoices_range" min="1" max="100" step="1" value="10" />
-                            </div>
-                            <div class="payroll_range_element">
-                                <label for="outcoming_invoices">Количество исходящих инвойсов</label>
-                                <input type="number" name="outcoming_invoices" id="outcoming_invoices" min="1" max="50" step="1" value="5" />
-                                <input type="range" name="outcoming_invoices_range" id="outcoming_invoices_range" min="1" max="50" step="1" value="5" />
-                            </div> -->
+
                         </div>
                         <div class="payroll_action">
-                            <p>Стоимость услуг аутсорсинга: от
-                                <span class="payroll_range_element ">
-                                    <input type="number" class=" payroll_range-price" name="price" id="payroll_range-price" min="35" max="2000" step="1" value="250" />
-                                </span> Лари в месяц</p>
-                            <button class="btn btn-hover">Получить предложение</button>
-                        </div>
 
+
+                            <span class="payroll_range_element ">
+                                    <label for="employees">Стоимость услуги аутсорссинга,  	&#8382; в месяц</label>
+                                   <input type="number" class=" payroll_range-price" name="price" id="payroll_range-price" min="35" max="2000" step="1" value="250"> </input>
+                                </span>
+                        </div>
+                        <button class="btn btn-hover" id="get_offer">Получить предложение</button>
                     </div>
                 </div>
         </div>

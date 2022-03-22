@@ -2,10 +2,8 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
 }
 
 @media screen and (min-width: 1024px) {
@@ -32,7 +30,10 @@
 
 .payroll_range_element {
     margin-bottom: 20px;
+    width: 100%;
 }
+
+span.payroll_range_element {}
 
 .payroll_range_element label {
     font-weight: 500;
@@ -80,7 +81,7 @@
     height: 75px;
     font-size: 22px;
     background: #f3f6f9;
-    border-radius: 10px 10px 10px 0px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .payroll_range_element input[type=number]::-webkit-outer-spin-button,
@@ -92,26 +93,45 @@
 
 .payroll_action {
     width: 100%;
-    margin-top: 45px;
-    padding: 32px 16px;
-    background: #f3f6f9;
     border-radius: 10px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    flex-direction: row;
 }
+
+#get_offer {
+    width: 33%;
+    max-width: 290px;
+    max-height: 74px;
+    margin-top: 5px;
+}
+
+.payroll_range {
+    width: 33%;
+}
+
+@media screen and (max-width:1024px) {
+    .payroll_action .payroll_range-price {
+        color: #54b7e3;
+    }
+    .payroll_range_container {
+        flex-direction: column;
+    }
+    #get_offer {
+        width: 100%;
+    }
+    .payroll_range {
+        width: 100%;
+    }
+}
+
+
+/* #employees,
+#payroll_range-price {
+} */
 
 .payroll_action p {
     font-weight: 500;
@@ -127,17 +147,14 @@
 }
 
 .payroll_action .payroll_range-price {
-    color: #54b7e3;
+    color: #0B2128;
     font-size: 24px;
 }
 
 @media screen and (min-width: 1024px) {
     .payroll_action {
-        width: 50%;
+        width: 33%;
         margin: 0;
-        padding: 0 120px;
-        height: 345px;
-        margin-top: 30px;
     }
     .payroll_action p {
         font-size: 24px;
