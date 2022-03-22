@@ -126,9 +126,14 @@
     font-size: 24px;
 }
 
+.payroll_action .payroll_range-price {
+    color: #54b7e3;
+    font-size: 24px;
+}
+
 @media screen and (min-width: 1024px) {
     .payroll_action {
-        width: 48%;
+        width: 50%;
         margin: 0;
         padding: 0 120px;
         height: 345px;
@@ -138,6 +143,9 @@
         font-size: 24px;
     }
     .payroll_action p span {
+        font-size: 32px;
+    }
+    #payroll_range-price {
         font-size: 32px;
     }
 }
